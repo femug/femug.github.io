@@ -23,7 +23,7 @@ function setCoords(gmaps_map, map_location) {
 
 function fetchData() {
   var contentString = '';
-  fetch('https://cdn.rawgit.com/femug/femug/20160414/femug-list.json')
+  fetch('https://cdn.rawgit.com/femug/femug/20160414_2/femug-list.json')
     .then(function(response) {
       var contentType = response.headers.get("content-type");
       if (contentType && contentType.indexOf("application/json") !== -1) {
